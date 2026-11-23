@@ -38,6 +38,7 @@
 # A = float(input("Enter your capital : "))
 # B = float(input("Enter accpected return per year : "))
 # C = A*(B/100)
+
 # print(C)
 
 # A = float(input("enter value of A : "))
@@ -206,21 +207,32 @@
 
 # n = 3475
 # t = 0
-# while n != 0:
-#    r = n%10
-# #    t = t*10+r
-# #    n = n//10
-# # print(t)
+# # while n != 0:
+# #    r = n%10
+# #     t = t*10+r
+# #     n = n//10
+# #  print(t)
 
-number = 123456789
-count = 0
-if number == 0:
-    count = 1
-else:
-    number = abs(number)
+# number = 123456789
+# count = 0
+# if number == 0:
+#     count = 1
+# else:
+#     number = abs(number)
     
-    while number > 0:
-        count += 1
-        number = number // 10 
+#     while number > 0:
+#         count += 1
+#         number = number // 10 
 
-print("Total Number of Digits:", count)
+# print("Total Number of Digits:", count)
+
+
+# with open("data.txt","r") as f1:
+#     with open("copy.txt","w") as f2:
+#         for line in f1_txt:
+
+with open('first.txt', 'r') as f1, open('second.txt', 'w') as f2:
+    for line in f1:
+        f2.write(line)
+print("file has been copied.")
+
